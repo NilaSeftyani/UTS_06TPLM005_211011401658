@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: const MyHomePage(title: 'Shoes '),
+      home: const MyHomePage(title: 'Shoes'),
     );
   }
 }
@@ -31,10 +31,10 @@ class MyHomePage extends StatelessWidget {
         title: Row(
           children: [
             Text(title),
-            const Spacer(), // Spacer untuk menjaga jarak
+            const Spacer(), 
             CircleAvatar(
-              radius: 20, // Ukuran radius avatar
-              backgroundColor: Colors.grey[300], // Warna latar belakang avatar
+              radius: 20, 
+              backgroundColor: Colors.grey[300], 
               child: const Icon(
                 Icons.person,
                 color: Colors.black, // Warna ikon avatar
@@ -49,14 +49,14 @@ class MyHomePage extends StatelessWidget {
           ShoeCard(
             imageUrl:
                 "https://img.id.my-best.com/content_section/choice_component/contents/930f409a468c1d30f5ebfb1a5302ead6.png",
-            shoeName: 'Air Max 95 dan Air Max 270',
+             shoeName: 'Air Max 95 dan Air Max 270',
             shoePrice: 'Rp. 2.000.000,-',
             backgroundColor:
-                Colors.purple.withOpacity(0.2), // Background ungu lembut
+                Colors.purple.withOpacity(0.2)
           ),
           ShoeCard(
             imageUrl:
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmuODujOEv6XTK-uv_1uqHSLS3B2uzdWIwjB42gVGjKjg33sZhd8xCCRImS850k3XIcdM&usqp=CAU',
+                'https://img.id.my-best.com/content_section/choice_component/contents/19b2eec488c72deacc4c43f39b27fe8f.png?ixlib=rails-4.3.1&amp;q=70&amp;lossless=0&amp;w=690&amp;fit=max&amp;s=20fdc28ccc861223bd22d989be8cf432',
             shoeName: 'Air Max SC atau Air Max 1',
             shoePrice: 'Rp. 3.200.900,-',
             backgroundColor: Color.fromARGB(255, 7, 0, 212)
@@ -67,14 +67,15 @@ class MyHomePage extends StatelessWidget {
                 'https://img.id.my-best.com/content_section/choice_component/contents/19b2eec488c72deacc4c43f39b27fe8f.png?ixlib=rails-4.3.1&amp;q=70&amp;lossless=0&amp;w=690&amp;fit=max&amp;s=20fdc28ccc861223bd22d989be8cf432',
             shoeName: 'Air Max 2090',
             shoePrice: 'Rp. 1.650.900,-',
-            backgroundColor: const Color.fromARGB(255, 173, 0, 212).withOpacity(0.2), // Background cyan
+            backgroundColor: const Color.fromARGB(255, 173, 0, 212).withOpacity(0.2)
+                .withOpacity(0.2), // Background cyan
           ),
           ShoeCard(
             imageUrl:
                 'https://img.id.my-best.com/content_section/choice_component/contents/2f59f2c3f5215f9ce99274780bd0bde5.png?ixlib=rails-4.3.1&amp;q=70&amp;lossless=0&amp;w=690&amp;fit=max&amp;s=63dbc2db89df981bd4c11b8c83b6152a',
             shoeName: 'nike LA',
             shoePrice: 'Rp. 5.000.000,-',
-            backgroundColor: Colors.white.withOpacity(0.2), // Background cyan
+             backgroundColor: Colors.white.withOpacity(0.2)
           ),
         ],
       ),
